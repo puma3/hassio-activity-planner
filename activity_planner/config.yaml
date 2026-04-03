@@ -1,0 +1,36 @@
+name: "Activity Planner"
+version: "0.1.0"
+slug: "activity_planner"
+description: "Activity scheduler integrated with Home Assistant calendars."
+url: "https://github.com/puma3/hassio-activity-planner"
+image: "ghcr.io/puma3/activity_planner-{arch}"
+
+arch:
+  - aarch64
+  - amd64
+
+homeassistant_api: true
+hassio_api: false
+
+ingress: true
+ingress_port: 8080
+
+map:
+  - data:rw
+
+options:
+  ha_url: ""
+  ha_token: ""
+  read_calendars: []
+  write_calendar: ""
+  min_block_minutes: 60
+  gemini_api_key: ""
+
+schema:
+  ha_url: str
+  ha_token: str?
+  read_calendars:
+    - str
+  write_calendar: str
+  min_block_minutes: int(15,480)
+  gemini_api_key: str?
