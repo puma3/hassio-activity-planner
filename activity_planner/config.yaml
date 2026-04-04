@@ -1,5 +1,5 @@
 name: "Activity Planner"
-version: "0.1.1"
+version: "0.1.2"
 slug: "activity_planner"
 description: "Activity scheduler integrated with Home Assistant calendars."
 url: "https://github.com/puma3/hassio-activity-planner"
