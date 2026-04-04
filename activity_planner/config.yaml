@@ -3,7 +3,7 @@ version: "0.1.0"
 slug: "activity_planner"
 description: "Activity scheduler integrated with Home Assistant calendars."
 url: "https://github.com/puma3/hassio-activity-planner"
-image: "ghcr.io/puma3/activity_planner-{arch}"
+image: "ghcr.io/puma3/activity_planner"
 
 arch:
   - aarch64
